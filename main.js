@@ -15,10 +15,11 @@ let strings = ["кришна", "кришна", "харе", "харе",
   "харе", "харе", "кришна", "кришна", ":-O"];
 function unique(array) {
     for (let item of array) {
-        if (array.includes(item, array.indexOf(item))) return array.splice(array.indexOf(item), 1);
+        if (array.includes(item, array.indexOf(item))) array.splice(array.indexOf(item), 1);
     }
+    return array;
 }
-console.log( unique(strings) );
+console.log( unique(strings) ); // Теперь возвращает ['кришна', 'кришна', 'харе', 'харе'] ??? whyyyy ??
 
 // Textbook solution - a NEW array
 let strings = ["кришна", "кришна", "харе", "харе",
