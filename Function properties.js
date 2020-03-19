@@ -1,5 +1,5 @@
 // (MY SOLUTION IS A BIT BULKY)
-My solution:
+// My solution:
 function makeCounter() {
     counter.count = 0;
     function counter() {
