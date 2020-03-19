@@ -14,7 +14,7 @@ function makeCounter() {
     };
     return counter;
 }
-Textbook solution:
+// Textbook solution:
 function makeCounter() {
     let count = 0;
     function counter() {
